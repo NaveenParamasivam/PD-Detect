@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         doc=findViewById(R.id.doctorlotties);
         doc.animate().translationY(-1600).setDuration(1000).setStartDelay(5000);
         Intent i=new Intent(MainActivity.this,MainActivity2.class);
-        startActivity(i);
+
 
     }
 }
