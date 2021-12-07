@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/android_2.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/rectangle_3.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main3.xml" value="0.25" />
       </map>
     </option>
