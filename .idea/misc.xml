@@ -3,15 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/android_2.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/border.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/rectangle_3.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main2.xml" value="0.176" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main3.xml" value="0.16140350877192983" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main6.xml" value="0.25" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main7.xml" value="0.25" />
-        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main8.xml" value="0.25" />
+        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main9.xml" value="0.14628623188405798" />
       </map>
     </option>
   </component>

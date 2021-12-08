@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
         android:text="PD DETECT"
+        android:textColor="@color/black"
         android:textSize="40sp"/>
 
     <TextView
