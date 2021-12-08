@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:padding="16sp"
     android:scrollbarSize="25sp"
-    tools:context=".MainActivity2">
+    tools:context=".register">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".register"
     android:orientation="vertical"
     android:background="#fff"
     android:padding="20dp">

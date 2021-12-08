@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class MainActivity6 extends AppCompatActivity {
+public class loadingscreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.loadingscreen);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent1 =new Intent(MainActivity6.this,MainActivity8.class);
-                startActivity(intent1);
+                Intent negativeintent =new Intent(loadingscreen.this, positivescreen.class);
+                startActivity(negativeintent);
                 finish();
             }
         },5000);
