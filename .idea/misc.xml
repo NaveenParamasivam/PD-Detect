@@ -3,20 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/drawable/rounded_corner_view.xml" value="0.2703125" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/about.xml" value="0.4" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main2.xml" value="0.2" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main3.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main4.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main5.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main9.xml" value="0.14628623188405798" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/homepage.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/loadingscreen.xml" value="0.13858695652173914" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/register.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/splashscreen.xml" value="0.13858695652173914" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/teaminfo.xml" value="0.13858695652173914" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/menu/popup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/android_2.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/border.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/drawable/rectangle_3.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main10.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main2.xml" value="0.176" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main3.xml" value="0.16140350877192983" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main4.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main5.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main6.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main7.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main8.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/activity_main9.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/homepage.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/negativescreen.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/positivescreen.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/register.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/severityquestion.xml" value="0.25" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/layout/teaminfo.xml" value="0.264" />
+        <entry key="..\:/Users/jayab/AndroidStudioProjects/PD-Detect/app/src/main/res/menu/popup.xml" value="0.25" />
       </map>
     </option>
   </component>
