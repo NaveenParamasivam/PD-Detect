@@ -10,6 +10,7 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class about extends AppCompatActivity {
     LottieAnimationView homeicon1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,5 +23,6 @@ public class about extends AppCompatActivity {
                 startActivity(homeintent1);
             }
         });
+
     }
 }
