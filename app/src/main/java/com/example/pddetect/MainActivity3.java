@@ -11,9 +11,12 @@ import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MainActivity3 extends AppCompatActivity {
     Button bpd,bse;
-    ImageButton ib;
+    //ImageButton ib;
+    LottieAnimationView menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +24,12 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         bpd=findViewById(R.id.button);
         bse=findViewById(R.id.button1);
-        ib=findViewById(R.id.imageButton);
-        ib.setOnClickListener(new View.OnClickListener() {
+        menu=findViewById(R.id.menu);
+        menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PopupMenu popupMenu = new PopupMenu(MainActivity3.this, ib);
+
+                PopupMenu popupMenu = new PopupMenu(MainActivity3.this,menu);
                 popupMenu.getMenuInflater().inflate(R.menu.popup, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override

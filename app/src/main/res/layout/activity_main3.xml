@@ -7,21 +7,22 @@
     tools:context=".MainActivity3"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="32dp">
-
-    <ImageButton
-        android:id="@+id/imageButton"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/menu"
         android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/icon1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:lottie_rawRes="@raw/menu_icon"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"/>
+
 
     <Button
         android:id="@+id/button"
