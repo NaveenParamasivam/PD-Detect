@@ -17,6 +17,7 @@ public class MainActivity3 extends AppCompatActivity {
     Button bpd,bse;
     //ImageButton ib;
     LottieAnimationView menu;
+    //boolean ismenuclick=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,18 @@ public class MainActivity3 extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+              /*  if(ismenuclick)
+                {
+                    menu.setSpeed(-1);
+                    menu.playAnimation();
+                    ismenuclick=false;
+                }
+                else
+                {
+                    menu.setSpeed(1);
+                    menu.playAnimation();
+                    ismenuclick=true;
+                }*/
 
                 PopupMenu popupMenu = new PopupMenu(MainActivity3.this,menu);
                 popupMenu.getMenuInflater().inflate(R.menu.popup, popupMenu.getMenu());
