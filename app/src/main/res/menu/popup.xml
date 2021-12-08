@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <item
-            android:id="@+id/java"
-            android:title="Team Info" />
+            android:id="@+id/teamid"
+            android:icon="@drawable/profile"
+            android:title="Team Info"
 
+            />
         <item
-            android:id="@+id/kotlin"
-            android:title="About" />
+            android:id="@+id/aboutid"
+            android:icon="@drawable/notification"
+            android:title="About"
+            />
 
 
 </menu>
