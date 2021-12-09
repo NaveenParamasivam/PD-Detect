@@ -23,6 +23,36 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="false"/>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/walkinglottie"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/walk" />
+
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Click the below button to detect PD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walkinglottie"
+        app:layout_constraintVertical_bias="0.597" />
 
     <Button
         android:id="@+id/button"
@@ -34,22 +64,23 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.814" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="274dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="PD Severity"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+    <!-- <Button
+         android:id="@+id/button1"
+         android:layout_width="274dp"
+         android:layout_height="65dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="20dp"
+         android:text="PD Severity"
+         android:textSize="16sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.496"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.635" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

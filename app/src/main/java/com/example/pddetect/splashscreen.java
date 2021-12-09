@@ -14,7 +14,7 @@ public class splashscreen extends AppCompatActivity {
     ImageView medicalbackground;
     TextView ourappname;
     LottieAnimationView doctoranmie;
-    private static int SPLASH_SCREEN =5000;
+    private static int SPLASH_SCREEN =3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +22,9 @@ public class splashscreen extends AppCompatActivity {
         doctoranmie=findViewById(R.id.doctorlotties);
         medicalbackground=findViewById(R.id.bg);
         ourappname=findViewById(R.id.pdtext);
-        medicalbackground.animate().translationY(-3000).setDuration(1000).setStartDelay(4000);
-        doctoranmie.animate().translationY(1400).setDuration(1000).setStartDelay(4000);
-        ourappname.animate().translationY(1400).setDuration(1000).setStartDelay(4000);
+        medicalbackground.animate().translationY(-3000).setDuration(1000).setStartDelay(2000);
+        doctoranmie.animate().translationY(1400).setDuration(1000).setStartDelay(2000);
+        ourappname.animate().translationY(1400).setDuration(1000).setStartDelay(2000);
 
         new Handler().postDelayed(new Runnable() {
             @Override

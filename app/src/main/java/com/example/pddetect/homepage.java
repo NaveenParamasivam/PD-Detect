@@ -21,7 +21,7 @@ public class homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homepage);
         pdbutton=findViewById(R.id.button);
-        severitybutton=findViewById(R.id.button1);
+       // severitybutton=findViewById(R.id.button1);
         menu=findViewById(R.id.menu);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,16 +33,22 @@ public class homepage extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
-                        if(menuItem.getTitle()=="About")
+                        if(menuItem.getTitle()=="Team Info")
                         {
+                            Intent teamintent=new Intent(homepage.this, teaminfo.class);
+                            startActivity(teamintent);
+                        }
+                        else if (menuItem.getTitle()=="About")
+                        {
+
                             Intent aboutintent=new Intent(homepage.this, about.class);
                             startActivity(aboutintent);
                         }
                         else
                         {
 
-                            Intent teamintent=new Intent(homepage.this, teaminfo.class);
-                            startActivity(teamintent);
+                            Intent profileintent=new Intent(homepage.this, register.class);
+                            startActivity(profileintent);
                         }
                         return true;
                     }
@@ -57,13 +63,13 @@ public class homepage extends AppCompatActivity {
                 startActivity(loadintent);
             }
         });
-        severitybutton.setOnClickListener(new View.OnClickListener() {
+        /*severitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent severityintent=new Intent(homepage.this, severityquestion.class);
                 startActivity(severityintent);
 
             }
-        });
+        });*/
     }
 }

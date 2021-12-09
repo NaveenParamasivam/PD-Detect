@@ -13,6 +13,11 @@
             android:icon="@drawable/notification"
             android:title="About"
             />
+        <item
+            android:id="@+id/profileid"
+            android:icon="@drawable/notification"
+            android:title="Profile"
+            />
 
 
 </menu>
