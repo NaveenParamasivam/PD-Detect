@@ -48,7 +48,6 @@ public class severityquestion extends AppCompatActivity {
         return json;
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +59,7 @@ public class severityquestion extends AppCompatActivity {
         questionProgress.setMax(120);
         questionProgress.setProgress(currentProgress);
         result.setVisibility(View.INVISIBLE);
-        score=new Integer[12];
+        score = new Integer[12];
         for(int i=0;i<12;i++)
             score[i]=-1;
 
@@ -119,6 +118,7 @@ public class severityquestion extends AppCompatActivity {
             public void onClick(View view) {
                 Intent loadintent = new Intent(severityquestion.this, loadingscreen.class);
                 loadintent.putExtra("type", "severity");
+                loadintent.putExtra("scores", score);
                 startActivity(loadintent);
             }
         });

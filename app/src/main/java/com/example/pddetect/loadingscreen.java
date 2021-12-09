@@ -57,6 +57,21 @@ public class loadingscreen extends AppCompatActivity {
                         startActivity(loadintent);
                     }
                 }
+
+                if(type.equals("severity")){
+                    // Read from Shared Pref
+                    Context context = getApplicationContext();
+                    SharedPreferences results = context.getSharedPreferences("Results", Context.MODE_PRIVATE);
+                    String data = results.getString("HY Result", "");
+                    int[] score = getIntent().getIntArrayExtra("score");
+
+                    // Score calculation
+                    
+                    Toast.makeText(getApplicationContext(), data, Toast.LENGTH_LONG).show();
+                    Intent severityResultIntent = new Intent(getApplicationContext(), severityresult.class);
+                    severityResultIntent.putExtra("result", data);
+                    startActivity(severityResultIntent);
+                }
                 finish();
             }
         },3000);
