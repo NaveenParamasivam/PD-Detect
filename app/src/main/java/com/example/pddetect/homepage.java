@@ -40,13 +40,11 @@ public class homepage extends AppCompatActivity {
                         }
                         else if (menuItem.getTitle().equals("About"))
                         {
-
                             Intent aboutintent=new Intent(homepage.this, about.class);
                             startActivity(aboutintent);
                         }
                         else
                         {
-
                             Intent profileintent=new Intent(homepage.this, register.class);
                             startActivity(profileintent);
                         }
@@ -59,7 +57,8 @@ public class homepage extends AppCompatActivity {
         pdbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loadintent=new Intent(homepage.this, negativescreen.class);
+                Intent loadintent=new Intent(homepage.this, loadingscreen.class);
+                loadintent.putExtra("type", "pd");
                 startActivity(loadintent);
             }
         });
