@@ -10,4 +10,5 @@
     <color name="colorPrimary">#FF018786</color>
     <color name="colorPrimaryDark">#FF000000</color>
     <color name="colorAccent">#FF000000</color>
+    <color name="sky">#00BFFF</color>
 </resources>
