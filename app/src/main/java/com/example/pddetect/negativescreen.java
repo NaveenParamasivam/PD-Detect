@@ -32,7 +32,6 @@ public class negativescreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent severityintent=new Intent(negativescreen.this, severityquestion.class);
                 startActivity(severityintent);
-
             }
         });
 
@@ -48,7 +47,6 @@ public class negativescreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homebuttonintent=new Intent(negativescreen.this, homepage.class);
                 startActivity(homebuttonintent);
-
             }
         });
     }
