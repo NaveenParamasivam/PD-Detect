@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -27,7 +28,6 @@ public class register extends AppCompatActivity {
         gender = findViewById(R.id.spinnertext);
         height = findViewById(R.id.height);
         weight = findViewById(R.id.weight);
-        submit.setText("UPDATE PROFILE");
         final AutoCompleteTextView genderAuto = findViewById(R.id.spinnertext);
 
         ArrayList<String> genderList = getCustomerList();
@@ -39,14 +39,19 @@ public class register extends AppCompatActivity {
             public void onClick(View view) {
                 SharedPreferences profileData = getSharedPreferences("profile",MODE_PRIVATE);
                 SharedPreferences.Editor profileEdit = profileData.edit();
-                profileEdit.putString("name", name.getText().toString());
-                profileEdit.putInt("age",Integer.parseInt(age.getText().toString()));
-                profileEdit.putString("gender", gender.getText().toString());
-                profileEdit.putFloat("height",Float.parseFloat(height.getText().toString()));
-                profileEdit.putFloat("weight",Float.parseFloat(weight.getText().toString()));
-                profileEdit.commit();
-                Intent homeIntent = new Intent(register.this, homepage.class);
-                startActivity(homeIntent);
+                try{
+                    profileEdit.putString("name", name.getText().toString());
+                    profileEdit.putInt("age",Integer.parseInt(age.getText().toString()));
+                    profileEdit.putString("gender", gender.getText().toString());
+                    profileEdit.putFloat("height",Float.parseFloat(height.getText().toString()));
+                    profileEdit.putFloat("weight",Float.parseFloat(weight.getText().toString()));
+                    profileEdit.commit();
+                    Intent homeIntent = new Intent(register.this, homepage.class);
+                    startActivity(homeIntent);
+                } catch (Exception e) {
+                    Toast.makeText(getApplicationContext(), "Fill all the details!", Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
             }
         });
     }
@@ -61,7 +66,8 @@ public class register extends AppCompatActivity {
     private void fillDetails(){
         SharedPreferences profileCheck = getSharedPreferences("profile", MODE_PRIVATE);
         String nameValue = profileCheck.getString("name","");
-        if(!name.equals("")){
+        if(!nameValue.equals("")){
+            submit.setText("UPDATE PROFILE");
             Integer ageValue = profileCheck.getInt("age", 0);
             String genderValue = profileCheck.getString("gender","");
             Float heightValue = profileCheck.getFloat("height",0);
@@ -72,6 +78,8 @@ public class register extends AppCompatActivity {
             gender.setText(genderValue);
             height.setText(heightValue.toString());
             weight.setText(weightValue.toString());
+
+            // Home button enable & visible
         }
     }
 }

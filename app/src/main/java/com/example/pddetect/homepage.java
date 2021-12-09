@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,8 +58,13 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Clear shared preference
-//                Context context = getApplicationContext();
-//                context.getSharedPreferences("Results", 0).edit().clear().apply();
+                Context context = getApplicationContext();
+                SharedPreferences results = context.getSharedPreferences("Results", Context.MODE_PRIVATE);
+                SharedPreferences.Editor resultsEditor = results.edit();
+                String[] classes = {"PD Result", "FOG Result", "HY Result"};
+                for (String key: classes) {
+                    resultsEditor.putString(key, "");
+                }
                 Intent loadIntent = new Intent(homepage.this, loadingscreen.class);
                 loadIntent.putExtra("type", "pd");
                 startActivity(loadIntent);

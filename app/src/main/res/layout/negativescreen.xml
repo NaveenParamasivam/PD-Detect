@@ -49,21 +49,22 @@
                 app:lottie_rawRes="@raw/sad" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/fogText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="120dp"
-                android:text="You Have PD"
+                android:text="Freezing of GAIT"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/pdText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:text="freezing of gait"
+                android:text="Parkinson's Disease Detected"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -99,7 +100,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="150dp"
                 android:layout_marginBottom="65dp"
-                android:text="PD Severity"
+                android:text="CALCULATE PD Severity"
                 android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
 
