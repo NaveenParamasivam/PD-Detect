@@ -17,20 +17,13 @@ public class positivescreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.positivescreen);
         homeicon2=findViewById(R.id.home2);
-        homeicon3=findViewById(R.id.home3);
+
         homebutton=findViewById(R.id.button2);
         homeicon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent homeintent2=new Intent(positivescreen.this, homepage.class);
                 startActivity(homeintent2);
-            }
-        });
-        homeicon3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent homeintent3=new Intent(positivescreen.this, homepage.class);
-                startActivity(homeintent3);
             }
         });
         homebutton.setOnClickListener(new View.OnClickListener() {
