@@ -25,23 +25,25 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="false"/>
 
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             app:cardElevation="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16">
+            app:layout_constraintVertical_bias="0.105">
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/sadicon"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="80dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 app:lottie_rawRes="@raw/sad" />
@@ -51,17 +53,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="135dp"
+                android:layout_marginTop="120dp"
                 android:text="You Have PD"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="freezing of gait"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
 
-
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             app:cardElevation="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -72,23 +82,15 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/severitymeter"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                android:layout_marginBottom="20dp"
+
                 app:lottie_rawRes="@raw/meter" />
-<!--
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="freezing of gait"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-                -->
+
 
             <Button
                 android:id="@+id/button1"
@@ -96,15 +98,15 @@
                 android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="150dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="65dp"
                 android:text="PD Severity"
                 android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_marginTop="50dp"
             app:cardElevation="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -116,9 +118,10 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/home5"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 app:lottie_rawRes="@raw/home2" />
@@ -127,7 +130,7 @@
                 android:id="@+id/button2"
                 android:layout_width="274dp"
                 android:layout_height="65dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="60dp"
                 android:text="Click Here To Go Home"
                 android:textSize="16sp"
                 android:layout_gravity="center"
