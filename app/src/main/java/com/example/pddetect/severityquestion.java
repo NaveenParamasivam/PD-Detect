@@ -2,6 +2,7 @@ package com.example.pddetect;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,10 +17,12 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class severityquestion extends AppCompatActivity {
     TextView question;
     RadioButton opt1,opt2,opt3,opt4;
+    ArrayList<RadioButton> options = new ArrayList<RadioButton>();
     Button Prev, nxt,result;
     RadioGroup selected;
     ProgressBar questionProgress;
@@ -61,13 +64,17 @@ public class severityquestion extends AppCompatActivity {
         for(int i=0;i<12;i++)
             score[i]=-1;
 
-        question=findViewById(R.id.textview4);
-        opt1=findViewById(R.id.option1);
-        opt2=findViewById(R.id.option2);
-        opt3=findViewById(R.id.option3);
-        opt4=findViewById(R.id.option4);
-        Prev=findViewById(R.id.button);
-        nxt=findViewById(R.id.button2);
+        question = findViewById(R.id.textview4);
+        opt1 = findViewById(R.id.option1);
+        opt2 = findViewById(R.id.option2);
+        opt3 = findViewById(R.id.option3);
+        opt4 = findViewById(R.id.option4);
+        options.add(opt1);
+        options.add(opt2);
+        options.add(opt3);
+        options.add(opt4);
+        Prev = findViewById(R.id.button);
+        nxt = findViewById(R.id.button2);
 
         try{
             jsonObject = new JSONObject(loadJSONFromAsset());
@@ -86,13 +93,13 @@ public class severityquestion extends AppCompatActivity {
                 currentProgress = currentProgress+10;
                 questionProgress.setProgress(currentProgress);
                 if(selectedid == opt1.getId())
-                    score[n]=0;
+                    score[n] = 0;
                 else if(selectedid == opt2.getId())
-                    score[n]=1;
+                    score[n] = 1;
                 else if(selectedid == opt3.getId())
-                    score[n]=2;
+                    score[n] = 2;
                 else if(selectedid == opt4.getId())
-                    score[n]=3;
+                    score[n] = 3;
 
                 n=n+1;
                 questionCall(n);
@@ -101,22 +108,25 @@ public class severityquestion extends AppCompatActivity {
         Prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                currentProgress=currentProgress-10;
+                currentProgress = currentProgress-10;
                 questionProgress.setProgress(currentProgress);
-                n=n-1;
+                n = n-1;
                 questionCall(n);
             }
         });
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //score Calculation
+                Intent loadintent = new Intent(severityquestion.this, loadingscreen.class);
+                loadintent.putExtra("type", "severity");
+                startActivity(loadintent);
             }
         });
 
     }
     public void questionCall(int n)
     {
+        selected.clearCheck();
         question.setText("");
         opt1.setText("");
         opt2.setText("");
@@ -127,10 +137,12 @@ public class severityquestion extends AppCompatActivity {
             JSONObject currentObj = jsonArray.getJSONObject(n);
             question.setText(currentObj.getString("question"));
             JSONArray choices = currentObj.getJSONArray("choices");
-            opt1.setText(choices.getString(0));
-            opt2.setText(choices.getString(1));
-            opt3.setText(choices.getString(2));
-            opt4.setText(choices.getString(3));
+            for(int i=0; i<4; i++){
+                options.get(i).setText(choices.getString(i));
+            }
+            if (score[n] != -1){
+                options.get(score[n]).setChecked(true);
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         }
