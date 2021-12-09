@@ -33,12 +33,12 @@ public class homepage extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
-                        if(menuItem.getTitle()=="Team Info")
+                        if(menuItem.getTitle().equals("Team Info"))
                         {
                             Intent teamintent=new Intent(homepage.this, teaminfo.class);
                             startActivity(teamintent);
                         }
-                        else if (menuItem.getTitle()=="About")
+                        else if (menuItem.getTitle().equals("About"))
                         {
 
                             Intent aboutintent=new Intent(homepage.this, about.class);

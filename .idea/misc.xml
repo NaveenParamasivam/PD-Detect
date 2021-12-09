@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dhili/Downloads/Projects and Repos/Project Work/PD-Detect/app/src/main/res/layout/homepage.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/dhili/Downloads/Projects and Repos/Project Work/PD-Detect/app/src/main/res/menu/popup.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/drawable/rounded_corner_view.xml" value="0.2703125" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/font/.xml" value="0.16041666666666668" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/about.xml" value="0.152" />
@@ -14,8 +16,7 @@
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/activity_main9.xml" value="0.14628623188405798" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/homepage.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/loadingscreen.xml" value="0.13858695652173914" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/negativescreen.xml" value="0.264" />
-        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/positivescreen.xml" value="0.176" />
+        <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/positivescreen.xml" value="0.12318840579710146" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/register.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/severityquestion.xml" value="0.13858695652173914" />
         <entry key="..\:/Users/prave/AndroidStudioProjects/PDDetect/app/src/main/res/layout/severityresult.xml" value="0.13858695652173914" />
