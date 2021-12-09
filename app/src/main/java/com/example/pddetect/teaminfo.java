@@ -14,7 +14,7 @@ public class teaminfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teaminfo);
-        homeicon=findViewById(R.id.home);
+        homeicon=findViewById(R.id.home6);
         homeicon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
