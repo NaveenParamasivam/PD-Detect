@@ -107,7 +107,8 @@
                     android:text="Option2"
                     android:textSize="16sp"
                     android:fontFamily="@font/doppio_one"
-                    android:textColor="@drawable/textcolor">
+                    android:textColor="@drawable/textcolor"
+                    android:textAlignment="center">
 
                 </RadioButton>
 
@@ -124,7 +125,8 @@
                     android:text="Option3"
                     android:textSize="16sp"
                     android:fontFamily="@font/doppio_one"
-                    android:textColor="@drawable/textcolor">
+                    android:textColor="@drawable/textcolor"
+                    android:textAlignment="center">
 
                 </RadioButton>
 
@@ -141,7 +143,8 @@
                     android:text="Option4"
                     android:textSize="16sp"
                     android:fontFamily="@font/doppio_one"
-                    android:textColor="@drawable/textcolor">
+                    android:textColor="@drawable/textcolor"
+                    android:textAlignment="center">
 
                 </RadioButton>
 
