@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -88,20 +89,28 @@ public class severityquestion extends AppCompatActivity {
         nxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int selectedid = selected.getCheckedRadioButtonId();
-                currentProgress = currentProgress+10;
-                questionProgress.setProgress(currentProgress);
-                if(selectedid == opt1.getId())
-                    score[n] = 0;
-                else if(selectedid == opt2.getId())
-                    score[n] = 1;
-                else if(selectedid == opt3.getId())
-                    score[n] = 2;
-                else if(selectedid == opt4.getId())
-                    score[n] = 3;
 
-                n=n+1;
-                questionCall(n);
+                int selectedid = selected.getCheckedRadioButtonId();
+
+                if(selectedid==-1)
+                {
+                    Toast.makeText(severityquestion.this, "Select any of the option", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    currentProgress = currentProgress+10;
+                    questionProgress.setProgress(currentProgress);
+                    if (selectedid == opt1.getId())
+                        score[n] = 0;
+                    else if (selectedid == opt2.getId())
+                        score[n] = 1;
+                    else if (selectedid == opt3.getId())
+                        score[n] = 2;
+                    else if (selectedid == opt4.getId())
+                        score[n] = 3;
+
+                    n = n + 1;
+                    questionCall(n);
+                }
             }
         });
         Prev.setOnClickListener(new View.OnClickListener() {
