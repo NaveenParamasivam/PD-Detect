@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class homepage extends AppCompatActivity {
-    Button pdbutton,severitybutton;
+    Button pdbutton;
     LottieAnimationView menu;
 
     @Override
@@ -21,7 +21,7 @@ public class homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homepage);
         pdbutton=findViewById(R.id.button);
-       // severitybutton=findViewById(R.id.button1);
+
         menu=findViewById(R.id.menu);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,17 +59,10 @@ public class homepage extends AppCompatActivity {
         pdbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loadintent=new Intent(homepage.this, loadingscreen.class);
+                Intent loadintent=new Intent(homepage.this, negativescreen.class);
                 startActivity(loadintent);
             }
         });
-        /*severitybutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent severityintent=new Intent(homepage.this, severityquestion.class);
-                startActivity(severityintent);
 
-            }
-        });*/
     }
 }
