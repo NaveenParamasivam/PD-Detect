@@ -92,13 +92,14 @@ public class severityquestion extends AppCompatActivity {
             public void onClick(View view) {
 
                 int selectedid = selected.getCheckedRadioButtonId();
-                currentProgress = currentProgress+10;
-                questionProgress.setProgress(currentProgress);
+
                 if(selectedid==-1)
                 {
                     Toast.makeText(severityquestion.this, "Select any of the option", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    currentProgress = currentProgress+10;
+                    questionProgress.setProgress(currentProgress);
                     if (selectedid == opt1.getId())
                         score[n] = 0;
                     else if (selectedid == opt2.getId())
