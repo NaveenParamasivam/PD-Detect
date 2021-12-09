@@ -95,7 +95,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="120dp"
                     android:gravity="center"
-                    android:text="Jaysree"
+                    android:text="Dr Jayshree L S"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -187,7 +187,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="120dp"
                     android:gravity="center"
-                    android:text="Amir"
+                    android:text="Amir Faizal"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -284,7 +284,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="120dp"
                     android:gravity="center"
-                    android:text="Vishnu"
+                    android:text="Vishnu Vardhan"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -322,7 +322,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="120dp"
                     android:gravity="center"
-                    android:text="Mouleeshwaran"
+                    android:text="Mouleeswaran"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
