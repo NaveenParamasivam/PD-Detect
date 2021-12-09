@@ -59,7 +59,7 @@ public class homepage extends AppCompatActivity {
         pdbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loadintent=new Intent(homepage.this, negativescreen.class);
+                Intent loadintent=new Intent(homepage.this, positivescreen.class);
                 startActivity(loadintent);
             }
         });
