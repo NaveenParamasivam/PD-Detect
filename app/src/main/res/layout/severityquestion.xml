@@ -14,6 +14,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Severity Question"
+            android:fontFamily="@font/bungee"
+            android:textSize="22dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -40,6 +43,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/progressBar">
 
             <TextView
@@ -47,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_bold"
-                android:textSize="16sp">
+                android:textSize="20dp">
 
             </TextView>
 
@@ -80,8 +84,10 @@
                     android:background="@drawable/radio_selector"
                     android:button="@android:color/transparent"
                     android:elevation="4dp"
+                    android:fontFamily="@font/doppio_one"
                     android:padding="16dp"
                     android:text="Option1"
+                    android:textSize="16sp"
                     android:textAlignment="center"
                     android:textColor="@drawable/textcolor">
 
@@ -99,6 +105,8 @@
                     android:elevation="4dp"
                     android:padding="16dp"
                     android:text="Option2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/doppio_one"
                     android:textColor="@drawable/textcolor">
 
                 </RadioButton>
@@ -114,6 +122,8 @@
                     android:elevation="4dp"
                     android:padding="16dp"
                     android:text="Option3"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/doppio_one"
                     android:textColor="@drawable/textcolor">
 
                 </RadioButton>
@@ -129,6 +139,8 @@
                     android:elevation="4dp"
                     android:padding="16dp"
                     android:text="Option4"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/doppio_one"
                     android:textColor="@drawable/textcolor">
 
                 </RadioButton>
@@ -142,6 +154,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Previous"
+            android:layout_marginBottom="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.126"
@@ -151,25 +164,25 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="133dp"
+            android:layout_height="48dp"
             android:text="Next"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintHorizontal_bias="0.839"
             app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="136dp"
+            android:layout_height="46dp"
+
             android:text="Calculate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintHorizontal_bias="0.854"
             app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
