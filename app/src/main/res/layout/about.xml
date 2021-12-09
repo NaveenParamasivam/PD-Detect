@@ -68,24 +68,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533" />
 
-    <TextView
-        android:id="@+id/aboutdescription"
+    <androidx.cardview.widget.CardView
         android:layout_width="365dp"
-        android:layout_height="247dp"
-        android:background="@drawable/rounded_corner_view"
-        android:fontFamily="@font/bad_script"
-        android:text="@string/parkinson_s_disease_pd_is_a_disorder_of_the_central_nervous_system_that_affects_movement_often_including_tremors_we_have_designed_a_system_that_uses_deep_learning_to_detect_parkinson_s_disease_at_an_earlier_stage"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:layout_height="250dp"
+        app:cardElevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.952">
+
+        <TextView
+            android:id="@+id/aboutdescription"
+            android:layout_width="365dp"
+            android:layout_height="247dp"
+            android:fontFamily="casual"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/parkinson_s_disease_pd_is_a_disorder_of_the_central_nervous_system_that_affects_movement_often_including_tremors_we_have_designed_a_system_that_uses_deep_learning_to_detect_parkinson_s_disease_at_an_earlier_stage"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.945" />
+    </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
