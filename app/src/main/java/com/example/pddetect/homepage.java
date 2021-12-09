@@ -2,6 +2,7 @@ package com.example.pddetect;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -26,8 +27,6 @@ public class homepage extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 PopupMenu popupMenu = new PopupMenu(homepage.this,menu);
                 popupMenu.getMenuInflater().inflate(R.menu.popup, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -57,9 +56,12 @@ public class homepage extends AppCompatActivity {
         pdbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loadintent=new Intent(homepage.this, loadingscreen.class);
-                loadintent.putExtra("type", "pd");
-                startActivity(loadintent);
+                // Clear shared preference
+//                Context context = getApplicationContext();
+//                context.getSharedPreferences("Results", 0).edit().clear().apply();
+                Intent loadIntent = new Intent(homepage.this, loadingscreen.class);
+                loadIntent.putExtra("type", "pd");
+                startActivity(loadIntent);
             }
         });
 

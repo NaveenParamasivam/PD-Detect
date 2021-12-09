@@ -9,48 +9,44 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class register extends AppCompatActivity {
     Button submit;
-    TextView Name,Age,Height,Weight;
-    TextView Gender;
+    TextView name, age, height, weight;
+    TextView gender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-        submit=findViewById(R.id.submit);
-        Name=findViewById(R.id.name);
-        Age=findViewById(R.id.age);
-        Gender=findViewById(R.id.spinnertext);
-        Height=findViewById(R.id.height);
-        Weight=findViewById(R.id.weight);
-        final AutoCompleteTextView genderauto = findViewById(R.id.spinnertext);
+        submit = findViewById(R.id.submit);
+        name = findViewById(R.id.name);
+        age = findViewById(R.id.age);
+        gender = findViewById(R.id.spinnertext);
+        height = findViewById(R.id.height);
+        weight = findViewById(R.id.weight);
+        submit.setText("UPDATE PROFILE");
+        final AutoCompleteTextView genderAuto = findViewById(R.id.spinnertext);
 
         ArrayList<String> genderList = getCustomerList();
-
         ArrayAdapter<String> adapter = new ArrayAdapter<>(register.this, android.R.layout.simple_spinner_item, genderList);
-
-        genderauto.setAdapter(adapter);
+        fillDetails();
+        genderAuto.setAdapter(adapter);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                SharedPreferences profiledata=getSharedPreferences("profile",MODE_PRIVATE);
-                SharedPreferences.Editor profileedit=profiledata.edit();
-                profileedit.putString("name",Name.getText().toString());
-                profileedit.putInt("age",Integer.parseInt(Age.getText().toString()));
-                profileedit.putString("gender",Gender.getText().toString());
-                profileedit.putFloat("height",Float.parseFloat(Height.getText().toString()));
-                profileedit.putFloat("weight",Float.parseFloat(Weight.getText().toString()));
-                profileedit.commit();
-                //Toast.makeText(register.this, Name.getText().toString()+" "+Age.getText().toString()+" "+Gender.getText().toString()+" "+Height.getText().toString()+" "+Weight.getText().toString(), Toast.LENGTH_SHORT).show();
-                Intent homeintent0=new Intent(register.this, homepage.class);
-                startActivity(homeintent0);
+                SharedPreferences profileData = getSharedPreferences("profile",MODE_PRIVATE);
+                SharedPreferences.Editor profileEdit = profileData.edit();
+                profileEdit.putString("name", name.getText().toString());
+                profileEdit.putInt("age",Integer.parseInt(age.getText().toString()));
+                profileEdit.putString("gender", gender.getText().toString());
+                profileEdit.putFloat("height",Float.parseFloat(height.getText().toString()));
+                profileEdit.putFloat("weight",Float.parseFloat(weight.getText().toString()));
+                profileEdit.commit();
+                Intent homeIntent = new Intent(register.this, homepage.class);
+                startActivity(homeIntent);
             }
         });
     }
@@ -60,5 +56,22 @@ public class register extends AppCompatActivity {
         gender.add("Male");
         gender.add("Female");
         return gender;
+    }
+
+    private void fillDetails(){
+        SharedPreferences profileCheck = getSharedPreferences("profile", MODE_PRIVATE);
+        String nameValue = profileCheck.getString("name","");
+        if(!name.equals("")){
+            Integer ageValue = profileCheck.getInt("age", 0);
+            String genderValue = profileCheck.getString("gender","");
+            Float heightValue = profileCheck.getFloat("height",0);
+            Float weightValue = profileCheck.getFloat("weight",0);
+
+            name.setText(nameValue);
+            age.setText(ageValue.toString());
+            gender.setText(genderValue);
+            height.setText(heightValue.toString());
+            weight.setText(weightValue.toString());
+        }
     }
 }

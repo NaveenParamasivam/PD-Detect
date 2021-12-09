@@ -66,7 +66,7 @@ public class loadingscreen extends AppCompatActivity {
                     int[] score = getIntent().getIntArrayExtra("score");
 
                     // Score calculation
-                    
+
                     Toast.makeText(getApplicationContext(), data, Toast.LENGTH_LONG).show();
                     Intent severityResultIntent = new Intent(getApplicationContext(), severityresult.class);
                     severityResultIntent.putExtra("result", data);

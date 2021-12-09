@@ -31,17 +31,17 @@ public class splashscreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                SharedPreferences profilecheck=getSharedPreferences("profile",MODE_PRIVATE);
-                String name=profilecheck.getString("name","");
-                if(name=="")
+                SharedPreferences profileCheck = getSharedPreferences("profile", MODE_PRIVATE);
+                String name = profileCheck.getString("name","");
+                if(name.equals(""))
                 {
-                    Intent registerintent =new Intent(splashscreen.this, register.class);
-                    startActivity(registerintent);
+                    Intent registerIntent = new Intent(splashscreen.this, register.class);
+                    startActivity(registerIntent);
                 }
                 else {
-                    Toast.makeText(splashscreen.this, "Welcome " + name, Toast.LENGTH_SHORT).show();
-                    Intent directhomeintent=new Intent(splashscreen.this,homepage.class);
-                    startActivity(directhomeintent);
+                    Toast.makeText(splashscreen.this, "Welcome " + name, Toast.LENGTH_LONG).show();
+                    Intent directHomeIntent=new Intent(splashscreen.this, homepage.class);
+                    startActivity(directHomeIntent);
                 }
                 finish();
             }
