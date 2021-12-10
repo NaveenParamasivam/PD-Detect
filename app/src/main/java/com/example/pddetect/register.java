@@ -81,10 +81,11 @@ public class register extends AppCompatActivity {
         SharedPreferences profileCheck = getSharedPreferences("profile", MODE_PRIVATE);
         String nameValue = profileCheck.getString("name","");
         if(!nameValue.equals("")){
-            //home icon Unhide & enable
+            // Home button enable & visible
             registerhome.setEnabled(true);
             registerhome.setVisibility(View.VISIBLE);
             submit.setText("UPDATE PROFILE");
+
             Integer ageValue = profileCheck.getInt("age", 0);
             String genderValue = profileCheck.getString("gender","");
             Float heightValue = profileCheck.getFloat("height",0);
@@ -96,7 +97,6 @@ public class register extends AppCompatActivity {
             height.setText(heightValue.toString());
             weight.setText(weightValue.toString());
 
-            // Home button enable & visible
         }
     }
 }

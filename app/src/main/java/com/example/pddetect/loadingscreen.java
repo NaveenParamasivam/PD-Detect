@@ -20,12 +20,28 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+
 public class loadingscreen extends AppCompatActivity {
     String url = "https://pd-detect-api.herokuapp.com/finaldetect";
+    Float finalScore;
+    int weightage;
+    int totalScore;
+    HashMap<String, Integer> hyScale = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loadingscreen);
+
+        finalScore = new Float(0);
+        weightage = 5;
+        totalScore = 56;
+        hyScale.put("Healthy Control", 0);
+        hyScale.put("2 severity", 1);
+        hyScale.put("2.5 severity", 2);
+        hyScale.put("3 severity", 3);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -62,12 +78,16 @@ public class loadingscreen extends AppCompatActivity {
                     // Read from Shared Pref
                     Context context = getApplicationContext();
                     SharedPreferences results = context.getSharedPreferences("Results", Context.MODE_PRIVATE);
-                    String data = results.getString("HY Result", "");
-                    int[] score = getIntent().getIntArrayExtra("score");
+                    String hyData = results.getString("HY Result", "");
+                    int sumScore = getIntent().getIntExtra("score", 0);
 
                     // Score calculation
+                    finalScore = new Float(sumScore);
+                    finalScore += (hyScale.get(hyData) * weightage);
+                    finalScore = finalScore/totalScore * 100;
 
-                    Toast.makeText(getApplicationContext(), data, Toast.LENGTH_LONG).show();
+                    String data = finalScore.toString() + "% - " + finalSeverity(finalScore);
+
                     Intent severityResultIntent = new Intent(getApplicationContext(), severityresult.class);
                     severityResultIntent.putExtra("result", data);
                     startActivity(severityResultIntent);
@@ -75,6 +95,17 @@ public class loadingscreen extends AppCompatActivity {
                 finish();
             }
         },3000);
+    }
+
+    public String finalSeverity(float finalScore){
+        if (finalScore == 0)
+            return "No Signs";
+        else if (finalScore <= 30)
+            return "Mild";
+        else if (finalScore <= 60)
+            return "Moderate";
+        else
+            return "Severe";
     }
 
     public void fetchData(){

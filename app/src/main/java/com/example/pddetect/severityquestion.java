@@ -125,9 +125,13 @@ public class severityquestion extends AppCompatActivity {
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int sumScore = 0;
+                for (int s : score){
+                    sumScore += s;
+                }
                 Intent loadintent = new Intent(severityquestion.this, loadingscreen.class);
                 loadintent.putExtra("type", "severity");
-                loadintent.putExtra("scores", score);
+                loadintent.putExtra("score", sumScore);
                 startActivity(loadintent);
             }
         });
