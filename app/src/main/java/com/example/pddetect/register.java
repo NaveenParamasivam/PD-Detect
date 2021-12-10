@@ -12,12 +12,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 import java.util.ArrayList;
 
 public class register extends AppCompatActivity {
     Button submit;
     TextView name, age, height, weight;
     TextView gender;
+    LottieAnimationView registerhome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +31,23 @@ public class register extends AppCompatActivity {
         gender = findViewById(R.id.spinnertext);
         height = findViewById(R.id.height);
         weight = findViewById(R.id.weight);
+        registerhome=findViewById(R.id.homeregister);
+        //Home hide & disable
+        registerhome.setEnabled(false);
+        registerhome.setVisibility(View.INVISIBLE);
         final AutoCompleteTextView genderAuto = findViewById(R.id.spinnertext);
 
-        ArrayList<String> genderList = getCustomerList();
+        ArrayList<String> genderList = getgender();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(register.this, android.R.layout.simple_spinner_item, genderList);
         fillDetails();
         genderAuto.setAdapter(adapter);
+        registerhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeregisterintent=new Intent(register.this, homepage.class);
+                startActivity(homeregisterintent);
+            }
+        });
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +69,7 @@ public class register extends AppCompatActivity {
             }
         });
     }
-    private ArrayList<String> getCustomerList()
+    private ArrayList<String> getgender()
     {
         ArrayList<String> gender = new ArrayList<>();
         gender.add("Male");
@@ -67,6 +81,9 @@ public class register extends AppCompatActivity {
         SharedPreferences profileCheck = getSharedPreferences("profile", MODE_PRIVATE);
         String nameValue = profileCheck.getString("name","");
         if(!nameValue.equals("")){
+            //home icon Unhide & enable
+            registerhome.setEnabled(true);
+            registerhome.setVisibility(View.VISIBLE);
             submit.setText("UPDATE PROFILE");
             Integer ageValue = profileCheck.getInt("age", 0);
             String genderValue = profileCheck.getString("gender","");
