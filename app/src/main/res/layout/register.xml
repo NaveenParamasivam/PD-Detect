@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16sp"
-    android:scrollbarSize="25sp"
     tools:context=".register">
 
     <LinearLayout
@@ -21,7 +19,7 @@
             android:id="@+id/homeregister"
             android:layout_width="48dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="130dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             app:layout_constraintBottom_toBottomOf="parent"
