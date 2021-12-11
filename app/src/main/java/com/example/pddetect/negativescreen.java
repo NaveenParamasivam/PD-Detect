@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class negativescreen extends AppCompatActivity {
-    LottieAnimationView homeicon4 ,homeicon5;
+    LottieAnimationView homeicon4 ;
     Button  severitybutton, homebutton;
     TextView fogText;
     @Override
@@ -24,7 +24,6 @@ public class negativescreen extends AppCompatActivity {
         homeicon4 = findViewById(R.id.home4);
         severitybutton = findViewById(R.id.button1);
         homebutton = findViewById(R.id.button2);
-        homeicon5 = findViewById(R.id.home5);
         Context context = getApplicationContext();
         SharedPreferences results = context.getSharedPreferences("Results", Context.MODE_PRIVATE);
         String data = results.getString("FOG Result", "");
@@ -45,13 +44,6 @@ public class negativescreen extends AppCompatActivity {
             }
         });
 
-        homeicon5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent homeintent5=new Intent(negativescreen.this, homepage.class);
-                startActivity(homeintent5);
-            }
-        });
        homebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
