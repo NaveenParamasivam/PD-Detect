@@ -78,15 +78,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="60dp"
             app:layout_constraintTop_toBottomOf="@+id/cardView2"
             app:layout_constraintVertical_bias="0.079">
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/severitymeter"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="90dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
 
@@ -99,34 +100,9 @@
                 android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="150dp"
-                android:layout_marginBottom="65dp"
+                android:layout_marginBottom="140dp"
                 android:text="CALCULATE PD Severity"
                 android:textSize="16sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="50dp"
-            app:cardElevation="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView3"
-            app:layout_constraintVertical_bias="0.0">
-
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/home5"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/home2" />
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="274dp"
@@ -138,6 +114,9 @@
                 android:layout_marginTop="160dp"
                 />
         </androidx.cardview.widget.CardView>
+
+
+
 
 
 
