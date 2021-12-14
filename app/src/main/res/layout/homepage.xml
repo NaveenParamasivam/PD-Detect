@@ -45,7 +45,7 @@
         android:layout_marginBottom="22dp"
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
-        android:text="Click the below button to detect PD"
+        android:text="Click the below button to detect PD."
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"

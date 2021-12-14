@@ -84,15 +84,17 @@
             android:id="@+id/card1n"
             android:layout_width="365dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
             app:cardElevation="50dp"
+            app:contentPadding="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.652"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="1.0">
+
             <TextView
                 android:id="@+id/aboutdescription1"
                 android:layout_width="365dp"
@@ -101,6 +103,7 @@
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:paddingBottom="30dp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#000000"
@@ -144,6 +147,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="1.0">
+
             <TextView
                 android:id="@+id/aboutdescription2"
                 android:layout_width="365dp"
@@ -152,6 +156,7 @@
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:paddingBottom="30dp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#000000"
@@ -194,6 +199,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="1.0">
+
             <TextView
                 android:id="@+id/aboutdescription3"
                 android:layout_width="365dp"
@@ -202,6 +208,7 @@
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:paddingBottom="30dp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#000000"
@@ -221,7 +228,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="25dp"
             android:fontFamily="monospace"
-            android:text="Combined Result"
+            android:text="Data from Cloud"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
@@ -245,6 +252,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="1.0">
+
             <TextView
                 android:id="@+id/aboutdescription4"
                 android:layout_width="365dp"
@@ -253,6 +261,7 @@
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:paddingBottom="30dp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#000000"

@@ -86,10 +86,14 @@ public class loadingscreen extends AppCompatActivity {
                     finalScore += (hyScale.get(hyData) * weightage);
                     finalScore = finalScore/totalScore * 100;
 
-                    String data = String.format("%.02f", finalScore) + "% - " + finalSeverity(finalScore);
+                    String data = "Score : " + String.format("%.02f", finalScore) + "%";
+                    String grade = "Grade : " + finalSeverity(finalScore);
+                    hyData = "HY Score : " + hyData;
 
                     Intent severityResultIntent = new Intent(getApplicationContext(), severityresult.class);
                     severityResultIntent.putExtra("result", data);
+                    severityResultIntent.putExtra("grade", grade);
+                    severityResultIntent.putExtra("hyData", hyData);
                     startActivity(severityResultIntent);
                 }
                 finish();
